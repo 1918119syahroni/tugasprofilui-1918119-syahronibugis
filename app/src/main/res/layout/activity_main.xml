@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/download"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/todo" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/gradient"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="175dp"
+        android:id="@+id/imageCard"
+        android:layout_marginStart="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="10dp"
+        android:layout_height="120dp"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/download"
+            android:contentDescription="@string/todo" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="205dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/syahroni_bugis"
+        android:textColor="#C9FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toRightOf="@+id/imageCard"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/layout1"
+        android:background="#C6E53935"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/pointLayout"
+        android:padding="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pointText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_regular"
+            android:text="@string/_87"
+            android:textColor="#E1FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/postingan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointText"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="@string/postingan"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/pointLayout"
+            android:background="#3BFFFFFF"
+            android:id="@+id/view1"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/FollowerLayout"
+            android:padding="25dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/FollowerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/_631"
+                android:textColor="#E1FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FollowerText"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="@string/followers"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/FollowerLayout"
+            android:background="#3BFFFFFF"
+            android:id="@+id/view2"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/FollowingLayout"
+            android:padding="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/FollowingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/_224"
+                android:textColor="#E1FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="TextContrastCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FollowingText"
+                android:id="@+id/following"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/following"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi_bugis7srb_gmail_com"
+        android:id="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/nunito_regular"
+        android:textColor="#5E5A5A"
+        app:drawableLeftCompat="@drawable/email"
+        app:drawableTint="#CDE53935" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_62_85254638999"
+        android:id="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/nunito_regular"
+        android:textColor="#5E5A5A"
+        app:drawableLeftCompat="@drawable/phone"
+        app:drawableTint="#CDE53935" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FCD252"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/facebook"
+            app:tint="#fff"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/facebook"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/twitter"
+            app:tint="#fff"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/twitter"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/instagram"
+            app:tint="#fff"
+            tools:ignore="ImageContrastCheck" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

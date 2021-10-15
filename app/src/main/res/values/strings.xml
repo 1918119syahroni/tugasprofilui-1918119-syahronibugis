@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Profil_Ui_Bugis_Syahroni</string>
+    <string name="syahroni_bugis">Syahroni Bugis</string>
+    <string name="_87">87</string>
+    <string name="postingan">Postingan</string>
+    <string name="_631">631</string>
+    <string name="followers">Followers</string>
+    <string name="_224">224</string>
+    <string name="following">Following</string>
+    <string name="hi_bugis7srb_gmail_com">hi.bugis7srb@gmail.com</string>
+    <string name="_62_85254638999">62–85254638999</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">todo</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">todo</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">todo</string>
+    <string name="todo" tools:ignore="DuplicateDefinition">todo</string>
+</resources>
